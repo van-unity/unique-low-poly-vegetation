@@ -1,15 +1,3 @@
-.preview-area {
-    background-color: rgb(50, 50, 50);
-    margin: 10px;
-    border-width: 2px;
-    border-color: black;
-}
-
 .select-button {
     min-height: 64px;
-}
-
-.prefab-list {
-    flex-direction: row;
-    flex-wrap: wrap;
 }

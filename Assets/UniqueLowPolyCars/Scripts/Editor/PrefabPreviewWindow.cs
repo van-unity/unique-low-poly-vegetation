@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using UniqueLowPolyCars.Scripts.Editor.Extensions;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -6,13 +6,12 @@ using UnityEngine.UIElements;
 namespace UniqueLowPolyCars.Scripts.Editor {
     public class PrefabPreviewWindow : EditorWindow {
         private string _folderPath = "Assets/UniqueLowPolyCars/Prefabs";
-        private readonly List<GameObject> _prefabs = new();
-        private VisualElement _prefabListView;
-        private readonly List<PrefabView> _prefabViews = new();
+        private PrefabListView _prefabListView;
 
         [MenuItem("BabyCheese/LowPolyVegetation/Prefab Preview")]
         public static void ShowWindow() {
-            var window = GetWindow<PrefabPreviewWindow>("BabyCheese Prefab Preview");
+            var window = GetWindow<PrefabPreviewWindow>();
+            window.titleContent = new GUIContent("BabyCheese Prefab Preview");
             window.minSize = new Vector2(256, 409);
         }
 
@@ -22,12 +21,12 @@ namespace UniqueLowPolyCars.Scripts.Editor {
 
         private void OnDisable() {
             SceneView.duringSceneGui -= OnDuringSceneGUI;
-            ClearPrefabViews();
+            _prefabListView?.ClearPrefabs();
         }
 
         public void CreateGUI() {
-            LoadStylesheet();
-            CreateScrollView();
+            rootVisualElement.AddStyleSheetFromResources("PrefabPreviewWindow");
+            SetupPrefabListView();
             CreateControlButtons();
             LoadPrefabsFromDefaultPath();
         }
@@ -48,32 +47,25 @@ namespace UniqueLowPolyCars.Scripts.Editor {
 
         private Vector3 ConvertMousePositionToWorldPosition(Event eventArgs, SceneView sceneView) {
             Ray mouseRay = HandleUtility.GUIPointToWorldRay(eventArgs.mousePosition);
+
             bool hitDetected = Physics.Raycast(mouseRay, out RaycastHit hitInfo);
+
             float targetDistance = hitDetected ? hitInfo.distance : sceneView.camera.nearClipPlane + 10f;
+
             return mouseRay.GetPoint(targetDistance);
         }
 
-        private void LoadStylesheet() {
-            StyleSheet stylesheet = Resources.Load<StyleSheet>("PrefabPreviewWindow");
-            if (stylesheet != null) {
-                rootVisualElement.styleSheets.Add(stylesheet);
-            }
-        }
-
-        private void CreateScrollView() {
-            _prefabListView = new ScrollView { name = "prefabListView" };
-            _prefabListView.contentContainer.AddToClassList("prefab-list");
+        private void SetupPrefabListView() {
+            _prefabListView = new PrefabListView();
             rootVisualElement.Add(_prefabListView);
         }
 
         private void CreateControlButtons() {
-            var selectButton = new Button(OnSelectPath) { text = "Select Prefabs Path" };
-            selectButton.AddToClassList("select-button");
-            rootVisualElement.Add(selectButton);
-
-            var clearButton = new Button(ClearPrefabs) { text = "Clear List" };
-            clearButton.AddToClassList("select-button");
-            rootVisualElement.Add(clearButton);
+            var selectPathButton = new Button(OnSelectPath) {
+                text = "Select Prefabs Path"
+            };
+            selectPathButton.AddToClassList("select-button");
+            rootVisualElement.Add(selectPathButton);
         }
 
         private void OnSelectPath() {
@@ -89,39 +81,18 @@ namespace UniqueLowPolyCars.Scripts.Editor {
         }
 
         private void LoadPrefabsFromSelectedPath() {
-            ClearPrefabViews();
             LoadPrefabs(_folderPath);
         }
 
         private void LoadPrefabs(string folderPath) {
+            _prefabListView.ClearPrefabs(); // Clear existing views before loading new ones
+
             var prefabGUIDs = AssetDatabase.FindAssets("t:Prefab", new[] { folderPath });
             foreach (string guid in prefabGUIDs) {
                 string assetPath = AssetDatabase.GUIDToAssetPath(guid);
                 GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(assetPath);
-                AddPrefabToList(prefab);
+                _prefabListView.AddPrefab(prefab);
             }
-        }
-
-        private void AddPrefabToList(GameObject prefab) {
-            if (prefab == null) return;
-            _prefabs.Add(prefab);
-            var prefabView = new PrefabView(prefab, 128, 128);
-            _prefabViews.Add(prefabView);
-            _prefabListView.Add(prefabView);
-        }
-
-        private void ClearPrefabs() {
-            _prefabs.Clear();
-            ClearPrefabViews();
-        }
-
-        private void ClearPrefabViews() {
-            foreach (var view in _prefabViews) {
-                view.Clear();
-            }
-
-            _prefabViews.Clear();
-            _prefabListView?.Clear();
         }
     }
 }

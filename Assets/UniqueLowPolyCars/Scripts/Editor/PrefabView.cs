@@ -1,4 +1,3 @@
-using System.IO;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -9,14 +8,12 @@ namespace UniqueLowPolyCars.Scripts.Editor {
         private Texture _texture;
 
         public PrefabView(GameObject prefab, int width = 256, int height = 256) {
-            styleSheets.Add(Resources.Load<StyleSheet>("PrefabView"));
+            this.AddToClassList("PrefabView");
             style.width = width;
             style.height = height;
             AddToClassList("prefab-view");
-            // var path = Path.Combine(Application.dataPath, "texturetest.png");
-            // File.WriteAllBytes(path, texture.EncodeToPNG());
-            var image = new Image();
 
+            var image = new Image();
             image.AddToClassList("imgui-container");
             Add(image);
             var label = new Label(prefab.name);
