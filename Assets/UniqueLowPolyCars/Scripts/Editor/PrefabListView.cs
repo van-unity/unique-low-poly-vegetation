@@ -10,6 +10,7 @@ namespace UniqueLowPolyCars.Scripts.Editor {
         public PrefabListView() {
             this.AddStyleSheetFromResources("PrefabListView");
             this.name = "prefabListView";
+            this.AddToClassList("prefab-list-view");
             this.contentContainer.AddToClassList("container"); // Ensure this class is defined in your USS for styling
         }
 

@@ -1,3 +1,23 @@
-.select-button {
-    min-height: 64px;
+.prefab-preview-window {
+    position: relative;
+    flex-direction: column;
+    background-color: #525252;
+}
+
+.bottom-panel {
+    flex: .075;
+}
+
+.total-number-label {
+    padding: 12px;
+    -unity-font-style: bold;
+    font-size: 20px;
+    color: #171717;
+}
+
+.background-image {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    opacity: .1;
 }

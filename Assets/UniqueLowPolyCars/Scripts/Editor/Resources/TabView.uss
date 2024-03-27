@@ -1,0 +1,30 @@
+.tab-view {
+    position: relative;
+    flex-direction: row;
+    padding: 8px;
+    flex: .2;
+    max-height: 128px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab-button {
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-button-image {
+    scale: .8;
+    transition: scale .25s ease-out;
+}
+
+.tab-button-image:hover {
+    scale: .9;
+}
+
+.tab-button-selected {
+    border-color: #171717;
+    border-radius: 5px;
+    border-width: 2px;
+}
