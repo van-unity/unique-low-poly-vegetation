@@ -7,7 +7,8 @@ namespace UniqueLowPolyCars.Scripts.Editor {
         Tree = 2,
         Pine = 3,
         Palm = 4,
-        Sculpt = 5
+        Sculpt = 5,
+        Parts = 6
     }
 
     [System.Serializable]
