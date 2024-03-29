@@ -128,6 +128,10 @@ MonoBehaviour:
     - {fileID: 2845861658127803881, guid: 2b1ba7396aaa147f9ba5d6ef9743bd7c, type: 3}
     - {fileID: 2978768969097576255, guid: 263f6175d3de848da9fc2b7c5c2f870f, type: 3}
     - {fileID: 2433574228024674193, guid: ab8786a0904764043b3abcdf5854215c, type: 3}
+    - {fileID: 4202947455591950865, guid: ba497bcbe88322c42949d3d4a5437fee, type: 3}
+    - {fileID: 6570751403118005131, guid: be76354e9eab22c42933d840d848694f, type: 3}
+    - {fileID: 7677808983697320527, guid: 03e407ec4b75e88439930f4305b6848c, type: 3}
+    - {fileID: 6625194654419186277, guid: 927effeaa6f81c14cb188ab8c199ecdb, type: 3}
     iconTexture: {fileID: 2800000, guid: 97a7eeba03e894744bc2ca0f61c79542, type: 3}
   - vegetationType: 5
     prefabs:
@@ -138,13 +142,12 @@ MonoBehaviour:
     iconTexture: {fileID: 2800000, guid: 71a23d1c93fc34477a8ea543c5ef75fc, type: 3}
   - vegetationType: 6
     prefabs:
+    - {fileID: 1901936943094622946, guid: 3e19d20a05f553f43a5039a58a53f81a, type: 3}
     - {fileID: 2832212703286609998, guid: 217741302a565f848b59cab9168f5f13, type: 3}
     - {fileID: 2422476763360828725, guid: 68f60b7d16a3b194882ae1f972d4ced8, type: 3}
     - {fileID: 79483853537786948, guid: 08d06b7a6dad2bd43b9ba8f23293dde9, type: 3}
     - {fileID: 7616485403929881722, guid: 7fa334c9718805843aacdcd10fe6290c, type: 3}
-    - {fileID: 5944313969275741949, guid: 297bba8c2a0987a438add4dfa290e14e, type: 3}
     - {fileID: 1796855993654422950, guid: bb47787e7eefc1e47a71610870075296, type: 3}
-    - {fileID: 5989735867381061999, guid: 072b626471583374b897f7ab45185da7, type: 3}
     - {fileID: 8100731194427817451, guid: 11ceea58b8755b34babdfcb7690ea333, type: 3}
     - {fileID: 8117666284328423633, guid: 018bd26956145f049aab9663500fd4e7, type: 3}
     - {fileID: 7997806900943874974, guid: e0ebe035c3f5f414e93f7d9abc788c04, type: 3}
