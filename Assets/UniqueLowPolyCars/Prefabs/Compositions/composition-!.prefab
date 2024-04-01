@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6410566090243804177}
   m_Layer: 0
-  m_Name: composition-3-sculpt-4-gender
+  m_Name: composition-!
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
