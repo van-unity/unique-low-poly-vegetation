@@ -28,6 +28,7 @@ MonoBehaviour:
     - {fileID: 5654637307626961560, guid: db0f9ddc7373c5b458bbd03e4700c527, type: 3}
     - {fileID: 1374975175806529123, guid: 62c9087a677a8de4d831ad7df5bca2f1, type: 3}
     - {fileID: 2052693521465820989, guid: fc64ca1222be6c545bd1d1d7a037c170, type: 3}
+    - {fileID: 3523219496090389100, guid: 48ad375eb89fce54e80b2c4c1d2f061e, type: 3}
     - {fileID: 4420422434161395387, guid: 3a5de7ebd3fa837468cd3ff909801d69, type: 3}
     - {fileID: 391938951311778424, guid: aea0d56309a859346b2e64b911c52344, type: 3}
     - {fileID: 333287154348526807, guid: 72a465fe58f214f46961e6c0059b0b55, type: 3}
@@ -65,8 +66,8 @@ MonoBehaviour:
     - {fileID: 1742352306932326576, guid: d55b336e1cf3db04984c07a253dda254, type: 3}
     - {fileID: 7702680003189031075, guid: adc1db1375511c44ba85bc26e2f083e7, type: 3}
     - {fileID: 1007840171290382845, guid: de65411c4aa73574c924ee627884a20e, type: 3}
+    - {fileID: 3498236209245142698, guid: 2c7dd5c4937abaa4fa2761be7f198403, type: 3}
     - {fileID: 4915319615744079243, guid: ec3279ef9f78da14b967847b3acc4c0e, type: 3}
-    - {fileID: 3523219496090389100, guid: 48ad375eb89fce54e80b2c4c1d2f061e, type: 3}
     iconTexture: {fileID: 2800000, guid: a5dddadedd0ae40c4b4a3e7537aa36a5, type: 3}
   - vegetationType: 2
     prefabs:
@@ -122,16 +123,18 @@ MonoBehaviour:
     - {fileID: 8954432588368523674, guid: b9bc436cf7b5f4ff08b16a8a46aeeb09, type: 3}
     - {fileID: 8030902750479002650, guid: 426562daed0914627abea47df6cd0dc9, type: 3}
     - {fileID: 8165299666255768295, guid: 4d6668f64402c4800b5b70af7b0e9ea9, type: 3}
+    - {fileID: 220319281438505962, guid: 08d97e1b5721e1941aa8bbf02023861a, type: 3}
+    - {fileID: 2870835939769943232, guid: ef23a98c1903e724fad4416f4b24c3c8, type: 3}
     iconTexture: {fileID: 2800000, guid: db37404ab7fd4435f8c6a910e26b4199, type: 3}
   - vegetationType: 4
     prefabs:
     - {fileID: 2845861658127803881, guid: 2b1ba7396aaa147f9ba5d6ef9743bd7c, type: 3}
+    - {fileID: 4202947455591950865, guid: ba497bcbe88322c42949d3d4a5437fee, type: 3}
     - {fileID: 2978768969097576255, guid: 263f6175d3de848da9fc2b7c5c2f870f, type: 3}
     - {fileID: 2433574228024674193, guid: ab8786a0904764043b3abcdf5854215c, type: 3}
-    - {fileID: 4202947455591950865, guid: ba497bcbe88322c42949d3d4a5437fee, type: 3}
+    - {fileID: 6625194654419186277, guid: 927effeaa6f81c14cb188ab8c199ecdb, type: 3}
     - {fileID: 6570751403118005131, guid: be76354e9eab22c42933d840d848694f, type: 3}
     - {fileID: 7677808983697320527, guid: 03e407ec4b75e88439930f4305b6848c, type: 3}
-    - {fileID: 6625194654419186277, guid: 927effeaa6f81c14cb188ab8c199ecdb, type: 3}
     iconTexture: {fileID: 2800000, guid: 97a7eeba03e894744bc2ca0f61c79542, type: 3}
   - vegetationType: 5
     prefabs:
@@ -155,4 +158,19 @@ MonoBehaviour:
     - {fileID: 4423744868345639736, guid: c3f101361bc46724499e2ab78ce2b53f, type: 3}
     - {fileID: 7310967299869032953, guid: cde629f42d0b3944aa4ba71f0c27e0f8, type: 3}
     - {fileID: 4059711572702845924, guid: 788a4b8e8a8b95148bbddc23923e68ff, type: 3}
+    - {fileID: 440008119845836330, guid: bac5334a3acf77e48b55656e692ab11c, type: 3}
+    - {fileID: 3109387794038624319, guid: b5498851898154345848d0a4e4f73369, type: 3}
+    - {fileID: 1019291830118309876, guid: be8a85874bcb2594092cd37c5b69258f, type: 3}
+    - {fileID: 2466438810520164773, guid: 811489389ab54fd4d9d1d0e78337084b, type: 3}
+    - {fileID: 7010014768425465037, guid: 4c17478d472496440a11beb290600372, type: 3}
     iconTexture: {fileID: 2800000, guid: e0d0995648ac844ac9a7fdcc2826f9e8, type: 3}
+  - vegetationType: 1
+    prefabs:
+    - {fileID: 1375343902677637733, guid: 0c5f1c1cea45b7f4b932e653cf33f03a, type: 3}
+    - {fileID: 3358342503683447008, guid: e41921a6120b2c1469e4a9182f9df68b, type: 3}
+    - {fileID: 5016201654617771783, guid: 10e6e546797fe50458105348b8e28aab, type: 3}
+    - {fileID: 3063122796447732259, guid: eab2c819073e1a04db6e4d6b30dfd68f, type: 3}
+    - {fileID: 3915523967470137025, guid: 38fb137cb740d384f8ddf87f3f306251, type: 3}
+    - {fileID: 607315957058460767, guid: 601e33112ad3fed40b053beef5a03529, type: 3}
+    - {fileID: 4986354674965782151, guid: 210b76e27a3ef064bb24417a7c65c64d, type: 3}
+    iconTexture: {fileID: 2800000, guid: 6bb87acbbe2d04623aa1ee79c7557e43, type: 3}
