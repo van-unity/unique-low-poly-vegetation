@@ -1,0 +1,14 @@
+Accessing Prefabs in 'Vibrant Low Poly Vegetation'
+
+Thank you for choosing 'Vibrant Low Poly Vegetation' for your project! To make your workflow as efficient as possible, we've included an easy-to-use editor tool that lists all 161 prefabs, allowing for simple drag-and-drop functionality directly into your scene.
+
+Opening the Prefab Viewer
+To access the vibrant collection of prefabs, follow these simple steps:
+
+Open your Unity project and navigate to the main menu at the top.
+Click on Window to expand the dropdown menu.
+Look for LowPolyVegetation and select it. This will open the dedicated editor window.
+Once the window is open, you will see a neatly organized list of all available prefabs. You can browse through this list to find the perfect piece of vegetation for your scene.
+To use a prefab, simply drag it from the list and drop it into your scene or hierarchy.
+
+With 'Vibrant Low Poly Vegetation', adding natural beauty to your environments has never been easier. Enjoy creating lush, lively scenes with just a few clicks!

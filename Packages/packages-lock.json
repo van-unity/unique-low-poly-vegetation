@@ -1,11 +1,10 @@
 {
   "dependencies": {
-    "com.babycheese.tools": {
-      "version": "https://github.com/van-unity/BabyCheeseTools.git",
+    "com.unity.asset-store-tools": {
+      "version": "file:com.unity.asset-store-tools",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "26e1b8e4fe0049cbba29e0de67df2f300b90337c"
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.unity.collab-proxy": {
       "version": "2.3.1",
